@@ -79,7 +79,7 @@ public class RunUrbanEVExample {
 	public static void main(String[] args) {
 		EvConfigGroup evConfigGroup = new EvConfigGroup();
 		evConfigGroup.timeProfiles = true;
-		evConfigGroup.chargersFile = "chargers.xml";
+		evConfigGroup.chargersFile = "chargers_2.xml";
 
 		String pathToConfig = args.length > 0 ?
 				args[0] :
