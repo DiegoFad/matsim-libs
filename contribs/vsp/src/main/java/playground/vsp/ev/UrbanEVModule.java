@@ -96,6 +96,8 @@ public class UrbanEVModule extends AbstractModule {
 		addMobsimListenerBinding().to(ChargerToXY.class);
 		addEventHandlerBinding().to(ActsWhileChargingAnalyzer.class).in(Singleton.class);
 		addControlerListenerBinding().to(ActsWhileChargingAnalyzer.class);
+		addEventHandlerBinding().to(ChargingDetourHandler.class).in(Singleton.class);
+		addMobsimListenerBinding().to(ChargingDetourHandler.class);
 	}
 
 //	private Set<String> getOpenBerlinActivityTypes() {
